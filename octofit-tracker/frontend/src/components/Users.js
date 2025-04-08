@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://redesigned-spork-g6pj46rr9hpp6x-8000.app.github.dev/api/users')
+    fetch('https://redesigned-spork-g6pj46rr9hpp6x-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

@@ -4,7 +4,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://redesigned-spork-g6pj46rr9hpp6x-8000.app.github.dev/api/activities')
+    fetch('https://redesigned-spork-g6pj46rr9hpp6x-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);

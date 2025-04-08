@@ -4,7 +4,7 @@ function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
 
   useEffect(() => {
-    fetch('https://redesigned-spork-g6pj46rr9hpp6x-8000.app.github.dev/api/leaderboard')
+    fetch('https://redesigned-spork-g6pj46rr9hpp6x-8000.app.github.dev/api/leaderboard/')
       .then(response => response.json())
       .then(data => setLeaderboard(data));
   }, []);
